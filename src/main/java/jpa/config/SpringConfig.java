@@ -40,7 +40,7 @@ public class SpringConfig {
         // JPA properties
         Properties jpaProperties = new Properties();
         jpaProperties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQLDialect");
-        jpaProperties.setProperty("hibernate.hbm2ddl.auto", "create"); // update or create
+        jpaProperties.setProperty("hibernate.hbm2ddl.auto", "update"); // update or create
         // update : update the existing DB structure, data will be keep
         // create: drop all DB structure, then re-create. All data will be lost.
         // recommend: create -> DB structure -> update
